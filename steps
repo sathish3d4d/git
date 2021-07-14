@@ -1,0 +1,19 @@
+1. install git 
+2. configure github 
+-> pre req
+-> gmail and pwd
+
+3.how to create repository in github
+--> go to + icon create repo
+4. files are created  in git 
+--> added
+--> commited
+5. crate ssh key paste into github ac
+6. go to cd .ssh/
+7. copy the pub key
+8. paste into central repo
+9. git remote add url
+10. git push origin master
+11. check the central repo  
+12.i want to upload files manually in git hub
+
