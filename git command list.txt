@@ -1,0 +1,131 @@
+1. install git 
+2. configure github 
+-> pre req
+-> gmail and pwd
+
+3.how to create repository in github
+--> go to + icon create repo
+4. files are created  in git 
+--> added
+--> commited
+5. crate ssh key paste into github ac
+6. go to cd .ssh/
+7. copy the pub key
+8. paste into central repo
+9. git remote add url
+10. git push origin master
+11. check the central repo  
+12.i want to upload files manually in git hub
+
+check the url
+============
+git remote show origin
+git remote rm origin
+
+Branches
+======
+default branch name 
+==> main or master
+How to create branches
+==>git branch brnach name
+How to switched one branch to another branch
+==> git checkout branchname
+How to create branch as well switched to another branch
+==> git check out -b branchname
+==========================
+How to delete branches loacally
+==> git branch -D branch name
+
+How to delete branc in remotly
+==>git push -u origin --delete filename
+
+How to rename the branches  locally
+==> git branch -m oldname newname
+
+How to rename branches in remotly
+ git push -u origin :oldname newname
+
+deleted multiple branches locally
+==> git branch -D filename1 filename2
+
+deleted multiple branches in remotly
+==>
+
+git log
+==> to check the activities
+
+TAGS
+====
+1.WHAT ARE GIT TAGS/RELEASES
+
+==> CREATING SPECIFIC POINTS IN HISTORY FOR YOUR REPOSITORY/DATA.
+VERSION RELEASE V1 ==>
+
+2.WHY SHOULD I CREATE TAG
+==> TO MARK RELEASE POINTS FOR CODE/DATA
+==> TO CREATE HISTORIC RESTORE POINTS
+
+3.WHEN TO CREATE TAGS
+==> WHEN YOU WANT TO CREATE A RELEASE POINT FOR A STABLE VERSION OF YOUR CODE
+
+4.hOW TO CREATE TAGS IN GIT
+
+Step 1:
+Checkout the branch where you want to create the tag
+git checkout "branch name"
+example : git checkout master
+
+Step 2:
+Create tag with some name
+==>git tag "tag name"
+example : 
+==>git tag v1.0
+==>git tag -a v1.1 -m "tag for ver 1.1"  
+
+Step 3:
+Display or Show tags
+git tag
+git show v1.0
+git tag -l “v1.*”
+
+Step 4:
+Push tags to remote
+===============
+git push origin v1.0
+git push origin --tags
+git push --tags 
+(to push all tags at once)
+
+Step 5:
+=======
+Delete tags  from locally :
+git tag -d v1.0
+git tag --delete v1.0
+
+to delete tags from remote :
+git push origin -d v1.0
+git push origin --delete v1.0
+git push origin :v1.0
+
+to delete multiple tags at once:
+===================
+git tag -d v1.0 v1.1 (local)
+git push origin -d v1.0 v1.1 (remote)
+
+difference b/w git fetch and merge
+git pull 
+git clone ===> copy the files from central to loacal  any location via internet
+
+
+
+
+
+
+edit file
+==> git config --edit --global
+
+ git config --global core.autocrlf false
+
+
+
+
